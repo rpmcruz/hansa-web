@@ -1,0 +1,1 @@
+/* this is the .h file for the private portion of the changeMap module	*/#define _H_changemapsprivate/*#include "main.h"static Handle currentMapH;*/static enum mapType currentMap;

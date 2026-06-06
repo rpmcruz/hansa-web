@@ -1,0 +1,1 @@
+/* this is the .h file for the public portion of the build module		*/#pragma onceenum buildPhase {	raiseContinentPhase, createMountainPhase, createForestPhase, digRiverPhase,	foundCityPhase, challengePhase, finalPhase};void BuildWorld(void);

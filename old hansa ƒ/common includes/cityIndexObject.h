@@ -1,0 +1,1 @@
+/* this is the .h file for the public portion of the cityIndexObject 	*//* module. It contains the primitive prototype declarations.			*/#pragma oncevoid	CreateCityIndex(void);void 	DestroyCityIndexObject(void);short 	GetCityIndex(Point p);void	RestoreCityIndexObject(void);void	SaveCityIndexObject(void);void 	SetCityIndex(Point p, short val);

@@ -1,0 +1,1 @@
+#pragma once#include "player.h"class CLeagueIcon {public:	CLeagueIcon(void);	~CLeagueIcon(void);	CIconHandle	GetLeagueIcon(short league);private:	CIconHandle leagueIcon[maxNumberOfPlayers+1];};extern CLeagueIcon *leagueIconSet;

@@ -1,0 +1,1 @@
+/* this is the .h file for the private part of the CityIndexObject		*//* module. It contains the declarations of the module's private data	*/#pragma once#include "city.h"#include "map.h"#include "utilities.h"static Handle cityIndexH;

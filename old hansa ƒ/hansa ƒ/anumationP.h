@@ -1,0 +1,1 @@
+#pragma once#include "view.h"static enum goodTypes	lastGood;static enum viewMode	lastViewMode;void createAnimation(void);void continueAnimation(void);void killAnimation(void);

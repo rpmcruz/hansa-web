@@ -1,0 +1,1 @@
+/* this is the .h file for the public part of end turn processing.		*//*																		*//* Modification History:												*//*																		*//* 01 Feb 1990 tomc	creation. Split from file.c							*/#pragma oncevoid	DestroyTurnInfo(void);void 	DoEndTurn(void);void 	InitTurnInfo(void);void	RestoreTurnInfo(void);void	SaveTurnInfo(void);

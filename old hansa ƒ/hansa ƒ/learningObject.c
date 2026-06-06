@@ -1,0 +1,1 @@
+/* this file contains the code to keep track of whether we can look at the computer player		*//* or not.																						*/#include "learningObject.h"#include "learningObjectP.h"Boolean GetLearningMode(){	return learningMode;}Boolean ToggleLearningMode(){	return (learningMode = !learningMode);}

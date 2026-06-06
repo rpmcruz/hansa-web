@@ -1,0 +1,1 @@
+/* this is the .h file for the public portion of the file module for 	*//* Hansa.																*/#pragma onceBoolean DoFile(int item );void	DoStartUp(void);Boolean	IsGameInProgress(void);

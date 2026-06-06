@@ -1,0 +1,1 @@
+/* this if the public declaration section of the addterrain module		*/#define _H_addterrainvoid 	AddRiver(Point hex);

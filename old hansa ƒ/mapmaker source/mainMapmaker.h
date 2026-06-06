@@ -1,0 +1,1 @@
+/* this is the include file for main.c.									*/#define _H_mainMapmaker/* Menu indices */enum mapTypes {	appleM, fileM, editM, terrainM, optionsM, shiftM, numberOfMenus};/* differentiate  mouse actions */enum mouseEventType {	singleClick, doubleClick, dragClick};MenuHandle GetMenuHandle(int which);Boolean ProcessAnEvent(void);

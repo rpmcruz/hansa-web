@@ -1,0 +1,1 @@
+/* this is the include file for CApplication.c.									*/#pragma once#include "CEnvironment.h"#include "CLeagueIcon.h"/* differentiate  mouse actions */class CApplication {public:	CApplication(void);										// constructor	~CApplication(void);									// and destructor};

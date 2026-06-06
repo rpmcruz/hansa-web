@@ -1,0 +1,1 @@
+/* this is the private .h file for the gameStatus object. */static Boolean gameInProgress = false;

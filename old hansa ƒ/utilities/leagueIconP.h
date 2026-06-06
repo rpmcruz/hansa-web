@@ -1,0 +1,1 @@
+/* this is the private part of the leagueIcon object. It contains 		*//* the declarations of data and procedures private to this module.		*/#pragma once#include "player.h"static CIconHandle	leagueIcon[5];static int		leagueID[5] = {	0, 2763, 7205, 9121, 5082};

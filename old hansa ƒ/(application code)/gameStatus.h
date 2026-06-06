@@ -1,0 +1,1 @@
+/* this is the public file for the gameStatus object. */Boolean IsGameInProgress(void);void	SetGameInProgress(void);void	SetGameOver(void);

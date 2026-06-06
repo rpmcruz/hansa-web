@@ -1,0 +1,1 @@
+/* this is the .h file for the private part of the cityNameObject		*//* module.																*/#pragma oncestatic short numberOfCities = 0;

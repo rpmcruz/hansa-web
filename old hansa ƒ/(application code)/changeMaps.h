@@ -1,0 +1,1 @@
+#define _H_changemaps/* maptype choices */enum mapType { historical, fantasy, random};/*void			ChangeMapsType(MenuHandle menuH, int item); */enum mapType	GetMapsChoice(void);void			SetMapsChoice(enum mapType newType);

@@ -1,0 +1,1 @@
+#pragma once#include "cityInfoObject.h"#include "cityNumberObject.h"#include "offer.h"static Handle currentPlayerH, leagueStatusH; 

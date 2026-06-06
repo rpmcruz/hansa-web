@@ -1,0 +1,1 @@
+/* this contains the public declarations for the leagueIcon module		*/#pragma onceCIconHandle GetLeagueIcon(short league);void InitLeagueIcons(void);

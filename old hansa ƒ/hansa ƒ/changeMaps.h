@@ -1,0 +1,1 @@
+#pragma once/* maptype choices */enum mapType { historical, fantasy, random};void			ChangeMapsType(MenuHandle menuH, int item);void			DestroyMapType(void);enum mapType	GetMapsChoice(void);void 			InitMapType(void);void			RestoreMapType(void);void			SaveMapType(void);void			SetMapsChoice(enum mapType newType);

@@ -1,0 +1,1 @@
+/* this is the .h file for the public part of the cityName module.		*//* It contains the prototype declarations for the cityName object prims	*/#pragma oncevoid		DestroyCityNameObject(void);StringPtr	GetCityName(short city);void 		InitCityNameObject(void);void		SaveCityNameObject(void);void 		SetCityName(Str255 name);

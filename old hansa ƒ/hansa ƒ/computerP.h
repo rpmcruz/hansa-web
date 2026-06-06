@@ -1,0 +1,1 @@
+#pragma once#include "city.h"#include "cityInfoObject.h"#include "cityNameObject.h"#include "cityNumberObject.h"#include "endTurn.h"#include "production.h"#include "transport.h"#include "utilities.h"short nearestLeagueCity(short cityToCheck, Boolean returnCity);

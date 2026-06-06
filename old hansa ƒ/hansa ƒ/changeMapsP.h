@@ -1,0 +1,1 @@
+/* this is the .h file for the private portion of the changeMap module	*/#pragma oncestatic Handle currentMapH;

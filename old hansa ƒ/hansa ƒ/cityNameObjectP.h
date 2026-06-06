@@ -1,0 +1,1 @@
+/* this is the .h file for the private portion of the cityNameObject	*//* module. It contains the declarations for the private data.			*/#pragma once#include "city.h"#include "cityNumberObject.h"#include "utilities.h"static Handle currentNameH = NULL;

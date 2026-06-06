@@ -1,0 +1,1 @@
+/* this is the LeagueIcon object. */#include "leagueIcon.h"#include "leagueIconP.h"void InitLeagueIcons(){	int i;		for (i = Player1; i <= maxNumberOfPlayers; i++)		leagueIcon[i] = GetCIcon(leagueID[i]);}CIconHandle GetLeagueIcon(short league){	return leagueIcon[league];}

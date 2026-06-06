@@ -1,0 +1,1 @@
+/* this is the .h file for the public part of the cityNumberObject 		*//* module																*/#pragma once#define maxNumberOfCities 50short 	GetNumberOfCities(void);void	IncrementNumberOfCities(void);void	SetNumberOfCities(short val);
