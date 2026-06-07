@@ -1,0 +1,14 @@
+Railroads
+
+One problem with railroads (or roads!) is the question of who they belong to. Three possibilities occur to me:
+
+1. Railroads are simply terrain features. Once one is built, transport cost along it is low for everyone.
+
+2. Railroads are terrain features, but they belong to the city that built them. If anyone uses the railroad, the owning city receives some sort of income--possibly utility, possibly some single good (gold?).
+
+3. Railroads belong to the city that built them, and can only be used by that city-to transport its own goods out or someone else
+s goods in, or to forward goods to another city.
+
+One way of handling spies is like trade missions (maybe click and drag with shift held down?). You are given a choice of how much to spend. The more you spend, the more likely you are to succeed. Once you succeed, you know production costs for that city forever (you can open it later--no reason to bother having to write it down. Or, better, you can see it on your production cost map forever) and what the city is producing and consuming in the turn you sent the spy. Maybe what it is exporting and importing where? If so, that city for that turn will appear on your production and consumption maps. 
+
+I think I prefer the map version. Once a spy has been successful, the city is on your production cost maps forever, your production and consumption maps for that turn only.

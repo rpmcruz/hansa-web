@@ -1,0 +1,45 @@
+Hanse
+
+This is a description of a game designed to teach economic concepts--in particular, the idea of comparative advantage. The game is modelled after "conquer the world" games such as Strategic Conquest (PBI Software), with one essential difference. What the player is building is not an empire, but a trading league. Cities are added to the league not by conquest but by the demonstation that they are better off in than out. 
+
+I will start by explaining the mechanics of trade and consumption within an existing league. I will then describe the process by which a league may expand (or contract). I will then explain  several alternative ways in which the game could pit a player against either other players or the computer. Finally, I will describe several simplified subgames which could be used either by themselves or as introductions to the full game.
+
+Production, Consumption, and Trade
+
+A league is made up of cities located on a map. Each individual city has a population, a production function, and a utility function. The production function uses one input, labor, to produce any of several goods. It is seperable and linear; more specifically, it exhibits diminishing returns. The marginal utility from consuming one more unit of a good decreases as the amount of that good consumed increases and increases as the amount of any other good increases. The utility function is identical across cities, except that cities with larger populations require proportionally larger amounts of all inputs to reach a given per capita utility.
+
+Cities within a league can trade with each other. Transportation costs are positive but small. and depend on the particular city pair; typically transportation cost is larger the farther apart the cities are and is smaller by water than by land. Transportation is effectively instantaneous; the turn represents a year, and it is assumed that moving goods from one city to another takes much less than a year.
+
+Trade, production and consumption are organised by the player, subject to constraints which will be described below. He instructs each city in his league how to allocate its annual labor amoung different goods and which of the goods it produces should be shipped to other cities. Goods cannot be stored, so consumption is production plus goods shipped from other cities minus goods shipped to other cities minus transport costs. Trade occurs only within a league.
+
+League Expansion
+
+A league may at any time send trade missions to try to persuade non-member cities to join. Supporting a trade mission, like producing a good, costs a certain amount of labor. A mission starts from some member city in the league; that city must provide the labor. There is a limit to how far a mission can travel in one turn; missions to more distant cities will cost more, and may take longer to arrive.
+
+A city bases its decision to join a league on its observation of the benefits that the league confers on its member cities. The probability that the invitation to join will be accepted is an increasing function of the average utility of the member cities within a certain distance. If an invitation is refused another mission can be sent the next year.
+
+Cities can not only join a league, they can also leave one. The reason for leaving is that a city concludes it would be better off on its own. This may happen in any year that the city's utility is lower than its autarchic level--the utility it would have if it engaged in no trade at all. The larger the gap, the higher the probability that the city will secede from the league.
+
+A second reason for leaving one league is to join another. If a member city of a league recieves a mission from a different league, the probability it will accept is an increasing function of the difference between the average utility of the cities in the inviting league located near the invited city and the utility of that city.
+
+Scoring
+
+In order for Hanse to be a game, there must be some way of doing well or badly. Two obvious criteria are the size of the league and the average utility (averaged over cities and over time) of its members. This suggests the following possible rules.
+
+1. Hanse is a solitaire game;  the objective is to get as large a score as possible. The game starts with a league of two adjacent cities controlled by the player; all other cities are autarchic, and remain so unless annexed by the league. The score is some measure of the utility gain resulting from the league. One plausable such measure would be the utility gain recieved by the member cities above their autarchic utility, summed over cities and time.
+
+2. Hanse is a solitaire game, but is played in an environment where trade occurs spontaneously. Each year, every pair of adjacent cities not in the leage has some probability of forming a two city league. Each (non-player) league coordinates its trade perfectly to maximise total utility, subject to the constraint that no member can fall below its autarchic level. Non-player leagues send missions in some semi-random fashion to adjacent cities. 
+
+3. Hanse is a two player game, played in a world where autarchic cities remain autarchic unless annexed. The other player is either the computer, playing its own league, or another human.
+
+4. Hanse is an N player game, with N human players each building his own league.
+
+In versions 2-4, players score as in 1, but there is the possibility that all of a player's cities may join other leagues (or become autarchic), eliminating the player from the game.
+
+Lessons
+
+Hanse is designed to teach three lessons, two specific and one general. One specific lesson is the principal of comparative advantage. An intelligent player should rapidly discover that it sometimes pays to ship a good from one city to another even though the labor cost of producing the good is less in the city it is shipped to. Typically, this will be a matter of exploiting comparative advantage. The requirement that a city's utility cannot be kept below the autarchic level very long (otherwise it will leave the league) requires that trade really be trade, not tribute.
+
+The second specific lesson is how to maximize output for a given production function and set of inputs--the logic that generates a total cost curve from a production function. In the context of the game, output is utility and cost is the labor cost for producing inputs to consumption, but the logic of the situation is the same as for a firm buying inputs and producing a single output. In this case as in that, the correct answer is one for which marginal product is proportional to price.
+
+The general lesson is that military conquest is not the only interesting model for interaction or expansion.

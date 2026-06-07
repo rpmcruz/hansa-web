@@ -1,0 +1,19 @@
+reconvert Hansa out of prototyper mode
+undo code
+color
+learning mode
+computer player
+shortcut keys must work
+redo menu bar
+random player mode fixed
+redo resource capabilities
+
+undo code
+color
+learning mode
+computer player
+shortcut keys must work
+redo menu bar
+random player mode fixed
+redo resource capabilities
+clicking on map gets you a game

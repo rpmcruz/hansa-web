@@ -1,0 +1,84 @@
+Current list of things to do for version .74:
+
+Create new maps (Gondor and Roman Empire come to mind).
+Implement Add/Drop Player
+Send Spies working
+
+Build railroads working
+(Cancel all trade, cancel production, cancel all production)
+Revamped palette, menu
+
+Bug list:
+
+We need movable maps and movable icon bar. Movable map is hard. If I can notice I am on a big screen I can do it.
+
+fix scroll bar pulls to the edge (at least in production, maybe trade)
+
+Current list of things to do for version 0.8:
+
+Add rudimentary computer player.
+
+After a player has demonstrated an ability to bring a city in at autarchy, start it at autarchy.
+
+Current list of things to do for version .9
+
+Make the computer play well.
+
+Exploratory mode?
+
+Current list of things to do for version .78:
+
+Create new maps (Gondor and Roman Empire come to mind).
+Implement Add/Drop Player
+Send Spies working
+
+Build railroads working
+(Cancel all trade, cancel production, cancel all production)
+revamp menu
+
+Bug list:
+
+We need movable maps and movable icon bar. Movable map is hard. If I can notice I am on a big screen I can do it.
+
+fix scroll bar pulls to the edge (at least in production, maybe trade)
+
+Current list of things to do for version 0.8:
+
+Add rudimentary computer player.
+
+After a player has demonstrated an ability to bring a city in at autarchy, start it at autarchy.
+
+Current list of things to do for version .9
+
+Make the computer play well.
+
+Exploratory mode?
+
+Current list of things to do for version .78:
+
+Create new maps (Gondor and Roman Empire come to mind).
+Implement Add/Drop Player
+Send Spies working
+
+Build railroads working
+(Cancel all trade, cancel production, cancel all production)
+computer player
+revise map sizes
+
+Bug list:
+
+We need movable maps and movable icon bar. Movable map is hard. If I can notice I am on a big screen I can do it.
+
+fix scroll bar pulls to the edge (at least in production, maybe trade)
+
+Current list of things to do for version 0.8:
+
+Add rudimentary computer player.
+
+After a player has demonstrated an ability to bring a city in at autarchy, start it at autarchy.
+
+Current list of things to do for version .9
+
+Make the computer play well.
+
+Exploratory mode?

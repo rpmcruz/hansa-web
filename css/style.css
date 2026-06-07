@@ -1,0 +1,283 @@
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 13px;
+  background: #1a1a2e;
+  color: #e0e0e0;
+  height: 100vh;
+  overflow: hidden;
+}
+
+#app {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+#toolbar {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 6px 12px;
+  background: #16213e;
+  border-bottom: 2px solid #0f3460;
+  flex-shrink: 0;
+}
+
+#turn-info {
+  font-weight: bold;
+  color: #e94560;
+  min-width: 160px;
+}
+
+#status-msg {
+  margin-left: 12px;
+  color: #aaa;
+  font-style: italic;
+}
+
+#main-area {
+  display: flex;
+  flex: 1;
+  overflow: hidden;
+}
+
+#map-container {
+  flex: 1;
+  overflow: auto;
+  background: #0a0a1a;
+  cursor: default;
+}
+
+#map-canvas {
+  display: block;
+}
+
+#side-panel {
+  width: 260px;
+  flex-shrink: 0;
+  background: #16213e;
+  border-left: 2px solid #0f3460;
+  overflow-y: auto;
+  padding: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.panel-header {
+  font-size: 14px;
+  font-weight: bold;
+  color: #e94560;
+  padding: 4px 0;
+  border-bottom: 1px solid #0f3460;
+  margin-bottom: 4px;
+}
+
+.panel-section {
+  background: #0f3460;
+  border-radius: 6px;
+  padding: 8px;
+}
+
+.section-title {
+  font-weight: bold;
+  color: #a8d8ea;
+  margin-bottom: 6px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.labor-display {
+  font-size: 11px;
+  color: #ffd166;
+  font-weight: normal;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th {
+  font-size: 11px;
+  color: #888;
+  text-align: center;
+  padding: 2px 4px;
+  border-bottom: 1px solid #0a2040;
+}
+
+td {
+  text-align: center;
+  padding: 2px 4px;
+}
+
+td:first-child {
+  text-align: left;
+}
+
+tr:hover td {
+  background: rgba(255,255,255,0.05);
+}
+
+.good-wheat  { color: #ffd166; }
+.good-fish   { color: #06d6a0; }
+.good-iron   { color: #aaa; }
+.good-silk   { color: #e040fb; }
+.good-timber { color: #8bc34a; }
+.good-gold   { color: #ffc107; }
+
+.qty-btn {
+  background: #0a2040;
+  border: 1px solid #1a4a80;
+  color: #e0e0e0;
+  border-radius: 3px;
+  cursor: pointer;
+  padding: 1px 5px;
+  font-size: 11px;
+}
+
+.qty-btn:hover { background: #1a4a80; }
+.qty-btn:disabled { opacity: 0.3; cursor: default; }
+
+.qty-display {
+  display: inline-block;
+  min-width: 28px;
+  text-align: center;
+}
+
+button {
+  background: #0f3460;
+  border: 1px solid #e94560;
+  color: #e0e0e0;
+  padding: 4px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 12px;
+}
+
+button:hover { background: #e94560; }
+button:disabled { opacity: 0.4; cursor: default; }
+
+#btn-end-turn {
+  background: #e94560;
+  font-weight: bold;
+}
+
+#btn-end-turn:hover { background: #c73652; }
+
+.hidden { display: none !important; }
+
+.modal {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 100;
+}
+
+.modal-box {
+  background: #16213e;
+  border: 2px solid #0f3460;
+  border-radius: 8px;
+  padding: 20px;
+  min-width: 340px;
+  max-width: 480px;
+  color: #e0e0e0;
+}
+
+.modal-box h2 {
+  color: #e94560;
+  margin-bottom: 14px;
+  font-size: 16px;
+}
+
+.form-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 10px;
+}
+
+.form-row label {
+  min-width: 80px;
+  color: #aaa;
+}
+
+select, input[type="range"] {
+  background: #0f3460;
+  border: 1px solid #1a4a80;
+  color: #e0e0e0;
+  padding: 3px 6px;
+  border-radius: 4px;
+}
+
+.modal-buttons {
+  display: flex;
+  gap: 8px;
+  justify-content: flex-end;
+  margin-top: 14px;
+}
+
+#report-content {
+  max-height: 300px;
+  overflow-y: auto;
+  line-height: 1.6;
+}
+
+#report-content p {
+  margin: 4px 0;
+}
+
+.report-joined { color: #06d6a0; }
+.report-left   { color: #e94560; }
+.report-unhappy { color: #ffd166; }
+
+#city-info-content {
+  font-size: 12px;
+  line-height: 1.7;
+}
+
+#trade-target-info {
+  font-size: 11px;
+  color: #aaa;
+  margin-bottom: 6px;
+}
+
+.player-0 { color: #e94560; }
+.player-1 { color: #06d6a0; }
+.player-2 { color: #74b9ff; }
+.player-3 { color: #ffd166; }
+
+.city-dot {
+  cursor: pointer;
+}
+
+#offer-cost-display {
+  font-size: 12px;
+  color: #ffd166;
+  margin-top: 4px;
+}
+
+#ng-city-assignments {
+  margin: 10px 0;
+  max-height: 200px;
+  overflow-y: auto;
+}
+
+.city-assign-row {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-bottom: 4px;
+  font-size: 12px;
+}
+
+.city-assign-row select {
+  font-size: 12px;
+  padding: 1px 4px;
+}

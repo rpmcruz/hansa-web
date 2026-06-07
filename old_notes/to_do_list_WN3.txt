@@ -1,0 +1,21 @@
+undo code
+learning mode
+computer player must work right
+shortcut keys must work
+redo menu bar
+redo resource capabilities
+clicking on map gets you a game
+
+I
+m currently going to go over the code from main on down, and crunch out the TCL stuff I put in. Then I
+m going to improve the animation bits so that it is smoother and the icon changes depending on terrain. Current ideas are:
+
+1) Terrain	icon
+
+	clear	wagon
+	forest	wagon
+	desert	camel
+	mountain	mule
+	ocean	ship
+	river	steamboat
+	swamp	barge

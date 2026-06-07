@@ -1,0 +1,108 @@
+8This is blank formatted for the Law School Laserwriter.
+
+Sincerely Yours
+
+David Friedman
+4919 S. Dorchester
+Chicago, IL 60615
+Olin Fellow in Law and Economics
+University of Chicago Law School
+1111 E. 60th St.
+Chicago, IL 60637
+
+Outline of Transport Cost Calcn
+
+Arrays:
+D(Hex) =Current shortest known distance to Hex
+S(Hex)=Status of Hex: 0 if not solved, 1 if solved (shortest d known)
+N(Hex)=next further unsolved hex to Hex
+P(Hex)= next closer unsolved hex to Hex
+H(d)=unsolved hex with the lowest D(H)>100d 
+
+Minhex = starting hex. D(Minhex)=0: S(Minhex)=0
+For all other hexes, D(Hex)=Dmax (some very large number)
+
+While S(C)=0 for some city hex C
+	Gosub NextHex
+Wend
+End
+
+NextHex:
+S(Minhex)=1
+For i=each adjacent hex to Minhex
+	Dmin=D(Minhex)+Distance from Minhex to i
+	Dold=D(i)
+	If Dmin<D(i) then D(i)=D min: Gosub ChangeList
+next i
+Minhex=first hex on list
+ (i.e.  lowest D(hex) of hexes for which S(hex)=0)
+
+Return
+
+ChangeList:
+long if Dold
+Dmax  
+(there was already a distance to i, so i is in the list)
+
+N(P(i))=N(i):P(N(i))=P(H)  
+(eliminate i from its old position in list)
+
+end if
+
+Outline of Transport Cost Calcn
+
+Arrays:
+D(Hex) =Current shortest known distance to Hex
+S(Hex)=Status of Hex: 0 if not solved, 1 if solved (shortest d known)
+N(Hex)=next further unsolved hex to Hex
+P(Hex)= next closer unsolved hex to Hex
+H(d)=unsolved hex with the lowest D(H)>100d 
+
+Minhex = starting hex. D(Minhex)=0: S(Minhex)=0
+For all other hexes, D(Hex)=Dmax (some very large number)
+For all other hexes, P(Hex)=N(Hex)=0
+
+While S(C)=0 for some city hex C
+	Gosub NextHex
+Wend
+End
+
+NextHex:
+
+S(Minhex)=1
+For i=each adjacent hex to Minhex
+	Dmin=D(Minhex)+Distance from Minhex to i
+	Dold=D(i)
+	If Dmin<D(i) then D(i)=D min: Gosub ChangeList
+next i
+Minhex=N(Minhex)
+ (i.e.  lowest D(hex) of hexes for which S(hex)=0)
+
+Return
+ChangeList:
+
+long if Dold
+Dmax  
+(there was already a distance to i, so i is in the list)
+
+N(P(i))=N(i):P(N(i))=P(H)  
+(eliminate i from its old position in list)
+
+end if
+d=D(i)/100 (integer divide, round down)
+
+{Do a binary search from P(H(d)) to H(d+1) to find H
+, the hex with the largest D(H
+) < D(i), and H
+, the smallest D(H
+)>D(i)}
+P(i)=H
+)=i: N(i)=Hn:P(H
+(inserting i into the list)
+
+N(i)=H
+)=i
+If D(H
+)<100*d then H(d)=i  
+ is i the lowest unsolved hex with d
+Return

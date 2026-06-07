@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Hansa</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div id="app">
+    <div id="toolbar">
+      <span id="turn-info">Player 1 &mdash; Turn 1</span>
+      <button id="btn-end-turn">End Turn</button>
+      <button id="btn-new-game">New Game</button>
+      <span id="status-msg"></span>
+    </div>
+
+    <div id="main-area">
+      <div id="map-container">
+        <canvas id="map-canvas"></canvas>
+      </div>
+
+      <div id="side-panel">
+        <div id="panel-city-name" class="panel-header">(click a city)</div>
+
+        <div id="panel-production" class="panel-section hidden">
+          <div class="section-title">Production
+            <span id="prod-labor-display" class="labor-display"></span>
+          </div>
+          <table id="prod-table">
+            <thead><tr><th>Good</th><th>Cost</th><th>Qty</th><th></th></tr></thead>
+            <tbody id="prod-tbody"></tbody>
+          </table>
+        </div>
+
+        <div id="panel-trade" class="panel-section hidden">
+          <div class="section-title">Trade</div>
+          <div id="trade-target-info"></div>
+          <table id="trade-table">
+            <thead><tr><th>Good</th><th>Export</th><th>Import</th></tr></thead>
+            <tbody id="trade-tbody"></tbody>
+          </table>
+        </div>
+
+        <div id="panel-score" class="panel-section">
+          <div class="section-title">League Summary</div>
+          <table id="score-table">
+            <thead><tr><th>Player</th><th>Cities</th><th>Util</th></tr></thead>
+            <tbody id="score-tbody"></tbody>
+          </table>
+        </div>
+
+        <div id="panel-city-info" class="panel-section hidden">
+          <div class="section-title">City Info</div>
+          <div id="city-info-content"></div>
+          <button id="btn-offer" class="hidden">Send Mission</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- New Game Dialog -->
+  <div id="new-game-modal" class="modal hidden">
+    <div class="modal-box">
+      <h2>New Game</h2>
+      <div class="form-row">
+        <label>Players:</label>
+        <select id="ng-players">
+          <option value="1">1 (vs 3 AI)</option>
+          <option value="2">2 (vs 2 AI)</option>
+          <option value="3">3 (vs 1 AI)</option>
+          <option value="4">4 (all human)</option>
+        </select>
+      </div>
+      <div id="ng-city-assignments"></div>
+      <div class="modal-buttons">
+        <button id="ng-start">Start</button>
+        <button id="ng-cancel">Cancel</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- End-of-turn report -->
+  <div id="report-modal" class="modal hidden">
+    <div class="modal-box">
+      <h2>End of Turn Report</h2>
+      <div id="report-content"></div>
+      <div class="modal-buttons">
+        <button id="report-ok">OK</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Offer dialog -->
+  <div id="offer-modal" class="modal hidden">
+    <div class="modal-box">
+      <h2>Send Mission</h2>
+      <div id="offer-content"></div>
+      <div class="form-row">
+        <label>Offer level:</label>
+        <input id="offer-level" type="range" min="1" max="10" value="5">
+        <span id="offer-level-display">5</span>
+      </div>
+      <div id="offer-cost-display"></div>
+      <div class="modal-buttons">
+        <button id="offer-send">Send</button>
+        <button id="offer-cancel">Cancel</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/game-data.js"></script>
+  <script src="js/game-engine.js"></script>
+  <script src="js/renderer.js"></script>
+  <script src="js/ui.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
